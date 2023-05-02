@@ -1,0 +1,254 @@
+@use "./partials/global" as *;
+/******************************************************/
+/* BELOW 1500px (Landscape Tablets) */
+/******************************************************/
+@media (max-width: 94rem) {
+  /*********** Our Product Section***********/
+  .ProductCards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 2rem;
+  }
+
+  /************ LearnMore **********/
+
+  .LearnMore {
+    grid-template-columns: 1fr 3fr 3fr 1fr;
+    gap: 1rem;
+  }
+}
+
+/******************************************************/
+/* BELOW 1200px (Landscape Tablets) */
+/******************************************************/
+@media (max-width: 75rem) {
+  /* ******************Hero**************** */
+  html {
+    font-size: 60%;
+  }
+  .Hero {
+    grid-template-columns: 1fr 3fr 3fr 1fr;
+    gap: 1rem;
+  }
+  .HeroTxtandBtn {
+    grid-column: 2;
+  }
+  .HeroImg {
+    grid-column: 3;
+    width: 90%;
+  }
+
+  /************ LearnMore **********/
+  .LearnMore {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  .LearnMoreLeft {
+    grid-column: 1;
+  }
+  .LearnMoreRight {
+    grid-column: 2;
+  }
+}
+
+/******************************************************/
+/* BELOW 1050px (Landscape Tablets) */
+/******************************************************/
+@media (max-width: 65.5rem) {
+  /* ******************Hero**************** */
+  .Hero {
+    grid-template-columns: 3fr 3fr;
+    gap: 1rem;
+  }
+  .HeroTxtandBtn {
+    grid-column: 1;
+  }
+  .HeroImg {
+    grid-column: 2;
+    width: 80%;
+  }
+
+  /************ Our Product Section**********/
+  .ProductCards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    gap: 2rem;
+  }
+  .ProductCard {
+    width: 70rem;
+    height: 30rem;
+  }
+
+  /************ LearnMore **********/
+  .LearnMore {
+    margin: 3rem 1rem 1rem 1rem;
+  }
+  .LearnMoreLeft {
+    padding: 2rem 1rem 2rem 1rem;
+  }
+  .LearnMoreRight {
+    padding: 1rem;
+  }
+
+  /* ********Menu Items Decription********* */
+  .MenuItemsDecription {
+    grid-template-columns: 1fr 8fr 1fr;
+  }
+
+  /***************** Footer****************/
+  .Footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.5fr 1fr 1fr;
+    gap: 1rem;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0.5rem 0px 10rem 0px;
+  }
+  .FooterLogos {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border-bottom: 0.5rem solid #393939;
+  }
+}
+
+/******************************************************/
+/* BELOW 1050px (Landscape Tablets) */
+/******************************************************/
+@media screen and (max-device-width: 65.5rem) and (orientation: landscape) {
+  /* ******************Hero**************** */
+  .Hero {
+    grid-template-columns: 1;
+    padding-top: 1rem;
+    height: 50vh;
+  }
+  .HeroTxtandBtn > p {
+    display: none;
+  }
+  .HeroImg {
+    display: none;
+  }
+
+  /* ******************Scrolling Menu**************** */
+
+  #ScrollingMenuwrap {
+    height: 10rem;
+    padding: 0.5rem;
+  }
+  #ScrollingMenu {
+    gap: 5rem;
+  }
+  #ScrollingMenu > img {
+    width: 5rem;
+    height: 8rem;
+  }
+}
+
+/******************************************************/
+/* BELOW 800px (Landscape Tablets) */
+/******************************************************/
+@media (max-width: 50rem) {
+  /* ************Hero************** */
+  html {
+    font-size: 55%;
+  }
+  .Hero {
+    grid-template-columns: 5fr 1fr;
+  }
+
+  #LandingHeroImg {
+    display: none;
+  }
+  .HeroTxtandBtn {
+    grid-column: 1;
+    /* background: rgba(253, 242, 233, 0.587); */
+  }
+
+  /************ LearnMore **********/
+  #LearnMoreRight {
+    display: none;
+  }
+  .LearnMore {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 3rem 15rem 1rem 15rem;
+  }
+  .LearnMoreLeft {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .LearnMoreBtn {
+    align-self: center;
+  }
+  .LearnMoreLogos {
+    gap: 3rem;
+  }
+
+  /********* Our Product Section*******/
+
+  .ProductCard {
+    width: 50rem;
+    height: 30rem;
+  }
+  /* .ProductImg {
+    height: 200px;
+    width: auto;
+  } */
+}
+
+/******************************************************/
+/* BELOW 580px (Landscape Tablets) */
+/******************************************************/
+@media (max-width: 36.5rem) {
+  h2,
+  h1 {
+    font-size: 4.5rem;
+  }
+
+  /* ************Hero************** */
+  .Hero {
+    grid-template-columns: 1fr;
+  }
+
+  /* **********Navigation Bar********* */
+  #NavList {
+    visibility: hidden;
+  }
+
+  /************ Our Product Section**********/
+  .ProductCard {
+    width: 30rem;
+    height: 55rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+    justify-items: center;
+    text-align: center;
+  }
+
+  /************ LearnMore **********/
+  .LearnMore {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 3rem 3rem 1rem 3rem;
+  }
+  .LearnMoreBtn {
+    justify-self: center;
+  }
+
+  #dropdownPart {
+    display: flex;
+    position: absolute;
+    top: 0rem;
+    right: 5rem;
+  }
+  .dropdown-content {
+    width: 25vw;
+    height: 20vh;
+  }
+}

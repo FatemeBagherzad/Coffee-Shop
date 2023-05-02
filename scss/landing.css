@@ -1,0 +1,458 @@
+/* Name: Coffee Shop
+
+---01 TYPOGRAPHY SYSTEM
+*********************************
+
+Open Sans Light 300
+Open Sans Regular 400
+Open Sans Regular Italic 400
+Open Sans Bold 700
+
+---02 COLORS
+***********************************
+-Primary colors:
+#5BACC3 - #FFF0ED
+-Neutral colors:
+#393939 - #F7F7F7 - #FFF
+
+*/
+/*************************************/
+/* General rules */
+/*************************************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Open Sans";
+  line-height: 1.4;
+  font-weight: 400;
+  color: #393939;
+  overflow-x: hidden;
+  transition: all 0.3s;
+}
+
+ul,
+a {
+  text-decoration: none;
+  list-style: none;
+  color: inherit;
+  padding: 0;
+}
+
+h1,
+h2 {
+  font-size: 5rem;
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 3.3rem;
+  font-weight: 400;
+}
+
+p {
+  font-size: 1.8rem;
+}
+
+.AllLinks:link,
+.AllLinks:visited {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 2rem;
+}
+
+.AllLinks:hover,
+.AllLinks:active {
+  color: #5bacc3;
+  padding: 0.05rem 0.05rem;
+  box-shadow: 0 0.1rem 0rem 0rem;
+}
+
+.btn {
+  padding: 0.8rem 2rem;
+  background-color: #5bacc3;
+  color: white;
+  border: none;
+  text-decoration: none;
+  font-size: 2.4rem;
+  width: 20rem;
+  height: 5rem;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.btntxtandborder {
+  width: 20rem;
+  height: 5rem;
+  background-color: transparent;
+  border: 2px solid rgb(59, 59, 59);
+  padding: 0.8rem 2rem;
+  position: absolute;
+  top: -0.5rem;
+  left: -0.5rem;
+}
+
+.btntxtandborder:hover {
+  cursor: pointer;
+  border: 2px solid rgb(255, 255, 255);
+}
+
+.btntxtandborder:active {
+  transform: translate(0.5rem, 0.5rem);
+}
+
+hr {
+  border-top: 0.1rem solid rgb(255, 255, 255);
+  border-bottom: 0.2rem solid #393939;
+}
+
+#HomeButton {
+  visibility: hidden;
+}
+
+/*************************************/
+/* Navigation bar */
+/*************************************/
+.Logo,
+.TopNav,
+.NavList {
+  display: flex;
+  align-items: center;
+}
+
+.NavList {
+  gap: 2rem;
+}
+
+.TopNav {
+  justify-content: space-between;
+  align-items: center;
+  gap: 6rem;
+  padding: 0.8rem 2rem;
+  background-color: #fff0ed;
+}
+
+/**************************/
+/* Dropdown Button  */
+/**************************/
+#dropdownPart {
+  display: none;
+}
+
+.dropdown {
+  z-index: 999;
+}
+
+.dropbtn {
+  cursor: pointer;
+  font-size: 2.2rem;
+  font-weight: 600;
+  right: 0rem;
+  top: 0.5rem;
+  background-color: #5bacc3;
+  border: none;
+  padding: 0.5rem 5rem 0.5rem 0.5rem;
+  position: fixed;
+  color: #fff0ed;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: #393939;
+}
+
+.dropdown-content {
+  width: 30vw;
+  height: 30vh;
+  margin-top: 4rem;
+  display: none;
+  /* position: absolute; */
+  font-size: 2.4rem;
+  background-color: #5bacc3;
+  box-shadow: 0px 0.5rem 0.5rem 0px rgba(62, 62, 62, 0.2);
+  z-index: 999;
+  padding-left: 1rem;
+}
+
+.dropdown-content a {
+  color: #f7f7f7;
+  /* padding: 1rem 1rem; */
+  text-decoration: none;
+  /* display: flex; */
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  transition: all 0.3s ease-in;
+  position: fixed;
+  right: 0rem;
+  top: 1.5rem;
+}
+
+/*************************************/
+/* Footer */
+/*************************************/
+.Footer {
+  background-color: #fff0ed;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  justify-content: space-around;
+  justify-items: center;
+  padding: 5rem;
+  position: relative;
+}
+
+.FooterLogos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.SocialMedImg {
+  display: flex;
+  gap: 2rem;
+}
+
+.FooterCoffeeBeanBackground {
+  position: absolute;
+  opacity: 30%;
+  width: 10rem;
+}
+
+.FooterCoffeeBeanBackgroundRight {
+  top: 0;
+  left: -2rem;
+}
+
+.FooterCoffeeBeanBackgroundLeft {
+  bottom: 0;
+  right: -2rem;
+}
+
+/*************************************/
+/* Hero Section */
+/*************************************/
+.Hero {
+  background-image: linear-gradient(rgba(34, 34, 34, 0.366), rgba(40, 40, 40, 0.1)), url(../Assets/images/DesignedVersion/hero/coffee-beans-couple-wallpaper-preview.jpg);
+  /* background-color: #fff0ed; */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  width: 100vw;
+  height: 70vh;
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 1rem;
+  align-items: center;
+  padding: 0 5rem;
+  overflow: hidden;
+}
+
+.HeroTxtandBtn {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  grid-column: 2;
+}
+
+.HeroImg {
+  grid-column: 3;
+  justify-self: center;
+}
+
+/*************************************/
+/* light animation */
+/*************************************/
+#light {
+  position: relative;
+  top: 10px;
+}
+
+#lineh1 {
+  position: absolute;
+  left: 0;
+  height: 2px;
+  width: 100vw;
+  background: linear-gradient(to right, #ffffff, rgba(248, 248, 248, 0.5019607843));
+  animation: lineH 4s 2s infinite linear;
+}
+
+@keyframes lineH {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 95%;
+    opacity: 0;
+  }
+}
+/*************************************/
+/* ScrollingMenu */
+/*************************************/
+#ScrollingMenuwrap {
+  padding: 2rem 1rem;
+  background-color: #1e293d;
+  margin-top: 0.5rem;
+  height: 16rem;
+  position: relative;
+  /* overflow: hidden; */
+}
+
+#ScrollingMenu {
+  display: flex;
+  justify-content: space-between;
+  gap: 10rem;
+  position: absolute;
+  left: -50%;
+  animation: ScrollingMenuAnimatin 30s 0s infinite linear;
+}
+
+@keyframes ScrollingMenuAnimatin {
+  100% {
+    left: 100%;
+  }
+}
+/*************************************/
+/* Our Product Section */
+/*************************************/
+.OurProductSection {
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  padding: 4rem 5rem;
+  align-items: center;
+}
+
+.ProductCards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+}
+
+.ProductCard {
+  width: 50rem;
+  height: 35rem;
+  padding: 1rem 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.1rem 0.5rem -0.2rem;
+  box-shadow: rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 3rem;
+}
+
+.ProductImg {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.ProductCardPrice {
+  font-weight: 800;
+  color: #5bacc3;
+  font-size: 3rem;
+  margin-top: 1rem;
+}
+
+/*************************************/
+/* LearnMore */
+/*************************************/
+.LearnMore {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1.5fr 1fr;
+  grid-row: 1fr;
+  gap: 3rem;
+  margin: 3rem 0;
+  justify-content: center;
+}
+
+.LearnMoreLeft {
+  grid-column: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 4rem;
+  align-content: center;
+  justify-items: start;
+}
+
+.LearnMoreLogos {
+  display: flex;
+  justify-content: space-between;
+}
+
+.LearnMoreBtn {
+  align-self: flex-start;
+}
+
+.LearnMoreRight {
+  background-image: url(../Assets/images/coldbrewbackground.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-column: 3;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.LearnMoreTiltedCan {
+  position: relative;
+  animation: 2s linear 0s infinite normal spin;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/*************************************/
+/* discount */
+/*************************************/
+.discountbox {
+  color: #f7f7f7;
+  background-color: #393939;
+  padding: 2rem;
+  margin: 15rem auto;
+  width: 90%;
+  overflow: hidden;
+  animation: DiscountLineAnimation 1.5s 0s infinite normal;
+}
+
+@keyframes DiscountLineAnimation {
+  0% {
+    background-color: red;
+  }
+  100% {
+    background-color: #393939;
+  }
+}
+div.discountbox > p {
+  font-size: 3rem;
+  text-align: center;
+}/*# sourceMappingURL=landing.css.map */

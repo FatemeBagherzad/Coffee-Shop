@@ -1,0 +1,21 @@
+@use "./partials/global" as *;
+.SectionAbout {
+  color: #f7f7f7;
+  background-image: linear-gradient(
+      rgba(34, 34, 34, 0.9),
+      rgba(40, 40, 40, 0.7)
+    ),
+    url(../Assets/images/DesignedVersion/hero/aboutHero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 5rem calc(20vw);
+  min-height: calc(70vh);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3;
+  gap: 1rem;
+  align-items: center;
+  justify-items: center;
+}

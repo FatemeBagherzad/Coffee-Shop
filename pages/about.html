@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../scss/landing.css" />
+    <link rel="stylesheet" href="../scss/query.css" />
+    <link rel="stylesheet" href="../scss/about.css" />
+
+    <title>Coffee Shop - Home</title>
+  </head>
+
+  <body>
+    <nav class="TopNav">
+      <div class="Logo">
+        <a href="../index.html"
+          ><img
+            class="LogoImg"
+            alt="nitro"
+            src="../Assets/logos/coffee-beans-logo-with-name-h.png"
+            width="150rem"
+        /></a>
+      </div>
+
+      <div id="NavList">
+        <ul class="NavList">
+          <li>
+            <a class="NavListItem AllLinks" href="../index.html">Home</a>
+          </li>
+          <li>
+            <a class="NavListItem AllLinks" href="./about.html">About</a>
+          </li>
+          <li>
+            <a class="NavListItem AllLinks" href="./menu.html">Menu</a>
+          </li>
+          <li>
+            <a class="NavListItem AllLinks" href="../pages/shopnow.html"
+              >Shop Now</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div class="dropdown" id="dropdownPart">
+        <button onclick="myFunction()" class="dropbtn">Menu</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a class="NavLink AllLinks" href="../index.html">About</a>
+          <a class="NavLink AllLinks" href="./menu.html">Menu</a>
+          <a class="NavLink AllLinks" href="../pages/shopnow.html">Shop Now</a>
+        </div>
+      </div>
+    </nav>
+
+    <section class="SectionAbout">
+      <h3 class="SectionAboutHeader">ABOUT US</h3>
+      <p>
+        Founded 25 years ago in Middle East and Canada 11 years ago, Nitro
+        Coffee is an international specialty coffee company. Our purpose is to
+        lead enduring change in the way coffee is valued, grown, produced and
+        enjoyed, responsibly for the future. We are proud to be B Corp
+        Certified.<br />
+        <br />
+        We cultivate long-term, direct relationships with coffee communities at
+        origin. This provides us with some of the very best speciality coffee in
+        the world, to share with our customers – providing wholesale solutions
+        to premium hotel groups, restaurants and coffee shops, plus at home
+        coffee experiences for our customers online. We also operate multiple
+        eateries in the Canada and Middle East, specialising in sustainable,
+        low-waste dining and a warm Kiwi hospitality – simply put, we are your
+        ultimate coffee host.
+      </p>
+
+      <button class="btn LearnMoreBtn">
+        <a href="../index.html"><span class="btntxtandborder">Home</span></a>
+      </button>
+    </section>
+
+    <footer class="Footer">
+      <div class="FooterLogos">
+        <div class="LogoFooter">
+          <a href="../index.html"
+            ><img
+              class="LogoImg"
+              alt="nitro"
+              src="../Assets/logos/coffee-beans-logo-with-name-v.png"
+              width="80rem"
+          /></a>
+        </div>
+        <div class="SocialMedImg">
+          <a href="https://www.facebook.com/" class="AllLinks" target="_blank"
+            ><img
+              src="../Assets/logos/Facebook-Icon.svg"
+              alt="Facebook Icon"
+              width="30px"
+              class=""
+          /></a>
+
+          <a href="https://www.instageram.com/" class="AllLinks" target="_blank"
+            ><img
+              src="../Assets/logos/Instagram-Icon.svg"
+              alt="Instageram Icon"
+              width="30px"
+              class=""
+          /></a>
+
+          <a href="https://www.Yelp.com/" class="AllLinks" target="_blank"
+            ><img
+              src="../Assets/logos/Yelp-Icon.svg"
+              alt="Yelp Icon"
+              width="30px"
+              class=""
+          /></a>
+        </div>
+      </div>
+
+      <div class="address">
+        <h3>Address</h3>
+        <p>
+          503 Broadway Penthouse<br />
+          Newyork
+        </p>
+      </div>
+
+      <div class="hours">
+        <h3>Hours</h3>
+        <p>
+          <b>Monday - Firday:</b> 9am - 7pm<br />
+          <b>Sataurday - Sunday:</b> 10am - 5pm
+        </p>
+      </div>
+
+      <div id="FooterTransparentBeen">
+        <img
+          src="../Assets/logos/coffee-beans-logo-and-footer.svg"
+          alt="Coffee Bean"
+          class="FooterCoffeeBeanBackground FooterCoffeeBeanBackgroundRight"
+        />
+        <img
+          src="../Assets/logos/coffee-beans-logo-and-footer.svg"
+          alt="Coffee Bean"
+          class="FooterCoffeeBeanBackground FooterCoffeeBeanBackgroundLeft"
+        />
+      </div>
+    </footer>
+
+    <script>
+      /* When the user clicks on the button, 
+      toggle between hiding and showing the dropdown content */
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function (event) {
+        if (!event.target.matches(".dropbtn")) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains("show")) {
+              openDropdown.classList.remove("show");
+            }
+          }
+        }
+      };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,197 @@
+@use "./partials/global" as *;
+/*************************************/
+/* Hero Section */
+/*************************************/
+.Hero {
+  background-image: linear-gradient(
+      rgba(34, 34, 34, 0.366),
+      rgba(40, 40, 40, 0.1)
+    ),
+    url(../Assets/images/DesignedVersion/hero/coffee-beans-couple-wallpaper-preview.jpg);
+  /* background-color: #fff0ed; */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  width: 100vw;
+  height: 70vh;
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 1rem;
+  align-items: center;
+  padding: 0 5rem;
+  overflow: hidden;
+}
+.HeroTxtandBtn {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  grid-column: 2;
+}
+.HeroImg {
+  grid-column: 3;
+  justify-self: center;
+}
+
+/*************************************/
+/* light animation */
+/*************************************/
+#light {
+  position: relative;
+  top: 10px;
+}
+#lineh1 {
+  position: absolute;
+  left: 0;
+  height: 2px;
+  width: 100vw;
+  background: linear-gradient(to right, #ffffff, #f8f8f880);
+  animation: lineH 4s 2s infinite linear;
+}
+@keyframes lineH {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 95%;
+    opacity: 0;
+  }
+}
+
+/*************************************/
+/* ScrollingMenu */
+/*************************************/
+#ScrollingMenuwrap {
+  padding: 2rem 1rem;
+  background-color: #1e293d;
+  margin-top: 0.5rem;
+  height: 16rem;
+  position: relative;
+  /* overflow: hidden; */
+}
+#ScrollingMenu {
+  display: flex;
+  justify-content: space-between;
+  gap: 10rem;
+  position: absolute;
+  left: -50%;
+  animation: ScrollingMenuAnimatin 30s 0s infinite linear;
+}
+@keyframes ScrollingMenuAnimatin {
+  100% {
+    left: 100%;
+  }
+}
+
+/*************************************/
+/* Our Product Section */
+/*************************************/
+.OurProductSection {
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  padding: 4rem 5rem;
+  align-items: center;
+}
+.ProductCards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+}
+.ProductCard {
+  width: 50rem;
+  height: 35rem;
+  padding: 1rem 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.1rem 0.5rem -0.2rem;
+  box-shadow: rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 3rem;
+}
+.ProductImg {
+  object-fit: contain;
+}
+.ProductCardPrice {
+  font-weight: 800;
+  color: #5bacc3;
+  font-size: 3rem;
+  margin-top: 1rem;
+}
+/*************************************/
+/* LearnMore */
+/*************************************/
+.LearnMore {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1.5fr 1fr;
+  grid-row: 1fr;
+  gap: 3rem;
+  margin: 3rem 0;
+  justify-content: center;
+}
+.LearnMoreLeft {
+  grid-column: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 4rem;
+  align-content: center;
+  justify-items: start;
+}
+.LearnMoreLogos {
+  display: flex;
+  justify-content: space-between;
+}
+.LearnMoreBtn {
+  align-self: flex-start;
+}
+.LearnMoreRight {
+  background-image: url(../Assets/images/coldbrewbackground.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-column: 3;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.LearnMoreTiltedCan {
+  position: relative;
+  animation: 2s linear 0s infinite normal spin;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*************************************/
+/* discount */
+/*************************************/
+.discountbox {
+  color: #f7f7f7;
+  background-color: #393939;
+  padding: 2rem;
+  margin: 15rem auto;
+  width: 90%;
+  overflow: hidden;
+  animation: DiscountLineAnimation 1.5s 0s infinite normal;
+}
+@keyframes DiscountLineAnimation {
+  0% {
+    background-color: red;
+  }
+  100% {
+    background-color: #393939;
+  }
+}
+div.discountbox > p {
+  font-size: 3rem;
+  text-align: center;
+}

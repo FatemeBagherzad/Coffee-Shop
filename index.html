@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./scss/landing.css" />
+    <link rel="stylesheet" href="./scss/menu.css" />
+    <link rel="stylesheet" href="./scss/query.css" />
+
+    <title>Coffee Shop - Home</title>
+  </head>
+
+  <body>
+    <header class="TwoNav&Hero">
+      <nav class="TopNav">
+        <div class="Logo">
+          <a href="index.html"
+            ><img
+              class="LogoImg"
+              alt="nitro"
+              src="Assets/logos/coffee-beans-logo-with-name-h.png"
+              width="150rem"
+          /></a>
+        </div>
+
+        <div id="NavList">
+          <ul class="NavList">
+            <li>
+              <a class="NavListItem AllLinks" href="index.html">Home</a>
+            </li>
+            <li>
+              <a class="NavListItem AllLinks" href="./pages/about.html"
+                >About</a
+              >
+            </li>
+            <li>
+              <a class="NavListItem AllLinks" href="./pages/menu.html">Menu</a>
+            </li>
+            <li>
+              <a class="NavListItem AllLinks" href="./pages/shopnow.html"
+                >Shop Now</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="dropdown" id="dropdownPart">
+          <button onclick="myFunction()" class="dropbtn">Menu</button>
+          <div id="myDropdown" class="dropdown-content">
+            <a class="NavLink AllLinks" href="index.html">About</a>
+            <a class="NavLink AllLinks" href="pages/menu.html">Menu</a>
+            <a class="NavLink AllLinks" href="./pages/shopnow.html">Shop Now</a>
+          </div>
+        </div>
+      </nav>
+
+      <div id="light">
+        <div id="lineh1"></div>
+      </div>
+
+      <div class="Hero">
+        <div class="HeroTxtandBtn">
+          <h1>Nitro Coffee</h1>
+          <p>
+            Coffee is a brewed drink prepared from roasted coffee beans, the
+            seeds of berries from certain Coffea species
+          </p>
+
+          <button class="btn">
+            <a href="./pages/shopnow.html"
+              ><span class="btntxtandborder">Shop Now</span></a
+            >
+          </button>
+        </div>
+
+        <div class="HeroImg" id="LandingHeroImg">
+          <img
+            src="Assets/images/DesignedVersion/package/package4.png"
+            alt="coffeebeansbag"
+            width="100%"
+          />
+        </div>
+      </div>
+    </header>
+
+    <div id="ScrollingMenuwrap">
+      <div id="ScrollingMenu" class="ScrollingMenu">
+        <img
+          src="./Assets/images/DesignedVersion/package/package4.png"
+          alt="coffee Bean"
+          width="100px"
+          height="120px"
+        />
+        <img
+          src="./Assets/images/DesignedVersion/package/package5.png"
+          alt="coffee Bean"
+          width="100px"
+          height="120px"
+        />
+        <img
+          src="./Assets/images/DesignedVersion/package/package6.png"
+          alt="coffee Bean"
+          width="100px"
+          height="120px"
+        />
+        <img
+          src="./Assets/images/DesignedVersion/package/package8.png"
+          alt="coffee Bean"
+          width="100px"
+          height="120px"
+        />
+        <img
+          src="./Assets/images/DesignedVersion/coldbrew/cold-brew1.png"
+          alt="coffee Bean"
+          width="80px"
+          height="120px"
+        />
+        <img
+          src="./Assets/images/DesignedVersion/coldbrew/cold-brew2.png"
+          alt="coffee Bean"
+          width="80px"
+          height="120px"
+        />
+        <img
+          src="./Assets/images/DesignedVersion/coldbrew/cold-brew3.png"
+          alt="coffee Bean"
+          width="80px"
+          height="120px"
+        />
+        <img
+          src="./Assets/images/DesignedVersion/coffeecup/coffeecup1.png"
+          alt="coffee Bean"
+          width="80px"
+          height="120px"
+        />
+      </div>
+    </div>
+
+    <section class="OurProductSection">
+      <h2>Our Products</h2>
+
+      <div class="ProductCards">
+        <article class="ProductCard">
+          <img
+            src="Assets/images/DesignedVersion/package/package5.png"
+            alt="coffee beans bag"
+            class="ProductImg"
+            height="280px"
+            width="200px"
+          />
+          <div>
+            <h3>Coffee Beans</h3>
+            <p>
+              A direct replacement of our beloved Gedeb, Worka Sakro is the new
+              washed Ethiopian on the menu.
+            </p>
+            <p class="ProductCardPrice">$18.99</p>
+          </div>
+        </article>
+
+        <article class="ProductCard">
+          <img
+            src="Assets/images/DesignedVersion/package/package8.png"
+            alt="coffee beans bag"
+            class="ProductImg"
+            height="280px"
+            width="200px"
+          />
+          <div>
+            <h3>Coffee Beans</h3>
+            <p>
+              A balanced, easy-drinking Colombian is one we try to keep on the
+              menu year-round.
+            </p>
+            <p class="ProductCardPrice">$21.99</p>
+          </div>
+        </article>
+
+        <article class="ProductCard">
+          <img
+            src="Assets/images/DesignedVersion/coldbrew/cold-brew1.png"
+            alt="Cold Brew"
+            class="ProductImg"
+            height="280px"
+            width="155px"
+          />
+          <div>
+            <h3>Cold Brew</h3>
+            <p>Regular Cold Brew</p>
+            <p class="ProductCardPrice">$2.99</p>
+          </div>
+        </article>
+
+        <article class="ProductCard">
+          <img
+            src="Assets/images/DesignedVersion/coldbrew/cold-brew2.png"
+            alt="Cold Brew"
+            class="ProductImg"
+            height="280px"
+            width="155px"
+          />
+          <div>
+            <h3>Cold Brew</h3>
+            <p>Vanilla Sweet Cream Cold Brew</p>
+            <p class="ProductCardPrice">$2.99</p>
+          </div>
+        </article>
+
+        <article class="ProductCard">
+          <img
+            src="Assets/images/DesignedVersion/coffeecup/coffeecup1.png"
+            alt="In House Brew cup"
+            class="ProductImg"
+            height="280px"
+            width="155px"
+          />
+          <div>
+            <h3>In House Brew</h3>
+            <p>Featured Medium Roast- Pike Place Roast</p>
+            <p class="ProductCardPrice">$4.99</p>
+          </div>
+        </article>
+
+        <article class="ProductCard">
+          <img
+            src="Assets/images/inhousebrew.png"
+            alt="In House Brew cup"
+            class="ProductImg"
+            height="260px"
+            width="155px"
+          />
+          <div>
+            <h3>In House Brew</h3>
+            <p>Featured Dark Roast</p>
+            <p class="ProductCardPrice">$2.99</p>
+          </div>
+        </article>
+      </div>
+
+      <button class="btn">
+        <a href="./pages/menu.html"
+          ><span class="btntxtandborder">VIEW ALL</span></a
+        >
+      </button>
+    </section>
+
+    <section class="LearnMore">
+      <div class="LearnMoreLeft">
+        <h2 class="LearnMoreHeading">We're Different</h2>
+        <p class="LearnMoreParagraph">
+          We grow and roast our own beans. Every bean, every cup, every step of
+          the way, we strive for excellence.
+        </p>
+        <div class="LearnMoreLogos">
+          <img
+            src="Assets/images/planting.svg"
+            alt="planting Icon"
+            width="50px"
+          />
+          <img
+            src="Assets/images/coffee-beans.svg"
+            alt="coffee beansg Icon"
+            width="50px"
+          />
+          <img
+            src="Assets/images/coffee-cup.svg"
+            alt="coffee cup Icon"
+            width="50px"
+          />
+        </div>
+
+        <button class="btn LearnMoreBtn">
+          <a href="./pages/about.html"
+            ><span class="btntxtandborder">Learn More</span></a
+          >
+        </button>
+      </div>
+
+      <div class="LearnMoreRight" id="LearnMoreRight">
+        <img
+          src="Assets/images/tiltedcan.png"
+          alt="tiltedcan"
+          class="LearnMoreTiltedCan"
+        />
+      </div>
+    </section>
+
+    <section class="discount">
+      <div class="discountbox">
+        <p>Get 20% off your first order with code: FirstNitro</p>
+      </div>
+    </section>
+
+    <footer class="Footer">
+      <div class="FooterLogos">
+        <div class="LogoFooter">
+          <a href="index.html"
+            ><img
+              class="LogoImg"
+              alt="nitro"
+              src="Assets/logos/coffee-beans-logo-with-name-v.png"
+              width="80rem"
+          /></a>
+        </div>
+        <div class="SocialMedImg">
+          <a href="https://www.facebook.com/" class="AllLinks" target="_blank"
+            ><img
+              src="Assets/logos/Facebook-Icon.svg"
+              alt="Facebook Icon"
+              width="30px"
+              class=""
+          /></a>
+
+          <a href="https://www.instageram.com/" class="AllLinks" target="_blank"
+            ><img
+              src="Assets/logos/Instagram-Icon.svg"
+              alt="Instageram Icon"
+              width="30px"
+              class=""
+          /></a>
+
+          <a href="https://www.Yelp.com/" class="AllLinks" target="_blank"
+            ><img
+              src="Assets/logos/Yelp-Icon.svg"
+              alt="Yelp Icon"
+              width="30px"
+              class=""
+          /></a>
+        </div>
+      </div>
+
+      <div class="address">
+        <h3>Address</h3>
+        <p>
+          503 Broadway Penthouse<br />
+          Newyork
+        </p>
+      </div>
+
+      <div class="hours">
+        <h3>Hours</h3>
+        <p>
+          <b>Monday - Firday:</b> 9am - 7pm<br />
+          <b>Sataurday - Sunday:</b> 10am - 5pm
+        </p>
+      </div>
+
+      <div id="FooterTransparentBeen">
+        <img
+          src="./Assets/logos/coffee-beans-logo-and-footer.svg"
+          alt="Coffee Bean"
+          class="FooterCoffeeBeanBackground FooterCoffeeBeanBackgroundRight"
+        />
+        <img
+          src="./Assets/logos/coffee-beans-logo-and-footer.svg"
+          alt="Coffee Bean"
+          class="FooterCoffeeBeanBackground FooterCoffeeBeanBackgroundLeft"
+        />
+      </div>
+    </footer>
+
+    <script>
+      /* When the user clicks on the button, 
+      toggle between hiding and showing the dropdown content */
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function (event) {
+        if (!event.target.matches(".dropbtn")) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains("show")) {
+              openDropdown.classList.remove("show");
+            }
+          }
+        }
+      };
+    </script>
+  </body>
+</html>

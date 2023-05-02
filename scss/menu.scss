@@ -1,0 +1,102 @@
+@use "./partials/global" as *;
+/*************************************/
+/* Hero Menu Page */
+/*************************************/
+.HeroMenuPage {
+  background-image: url(../Assets/images/coffee-circle.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 80vh;
+  color: #fdf2e9;
+  display: flex;
+  justify-content: center;
+}
+
+.HeroMenuPageText {
+  background-color: #393939;
+  width: 100vw;
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+}
+
+/*************************************/
+/* Second Navigation bar */
+/*************************************/
+.SecondNav {
+  color: #ffffff;
+  background-color: #393939;
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.SecondNavList {
+  display: flex;
+  gap: 3rem;
+}
+
+.vl {
+  border-left: 0.5rem solid #5bacc3;
+}
+
+/*************************************/
+/* Menu Items Decription */
+/*************************************/
+.MenuItemsDecription {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+.HotDrink,
+.ColdDrink,
+.Pasteries {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+  text-align: center;
+  padding: 5rem 3rem;
+}
+.HotDrink,
+.Pasteries,
+.ColdDrink {
+  grid-column: 2;
+}
+.MenuItemsDecriptionB1 {
+  background-image: linear-gradient(
+      rgba(34, 34, 34, 0.8),
+      rgba(40, 40, 40, 0.6)
+    ),
+    url(../Assets/images/DesignedVersion/hero/MenuPageHotDrinkHero2.jpg);
+  background-size: cover;
+  background-position: center;
+  color: rgb(214, 214, 214);
+}
+.MenuItemsDecriptionB2 {
+  background-image: linear-gradient(
+      rgba(34, 34, 34, 0.8),
+      rgba(40, 40, 40, 0.5)
+    ),
+    url(../Assets/images/DesignedVersion/hero/MenuPageColdBrewHero2.jpeg);
+  background-size: cover;
+  background-position: center;
+  color: rgb(214, 214, 214);
+  border-top: 2rem solid #fdf2e9;
+  border-bottom: 2rem solid #fdf2e9;
+}
+.MenuItemsDecriptionB3 {
+  background-image: linear-gradient(
+      rgba(34, 34, 34, 0.8),
+      rgba(40, 40, 40, 0.6)
+    ),
+    url(../Assets/images/DesignedVersion/hero/MenuPagePasteriesHero2.jpg);
+  background-size: cover;
+  background-position: center;
+  color: rgb(214, 214, 214);
+}
+.price {
+  color: #5bacc3;
+  font-weight: bold;
+}
