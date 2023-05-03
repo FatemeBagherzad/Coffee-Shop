@@ -8,14 +8,27 @@
   width: 100vw;
   height: 80vh;
   color: $LightGray;
-  @include FlexLayout(row, center, center);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.HeroMenuPageText {
-  background-color: $DarkGray;
-  width: 100vw;
-  height: 6rem;
-  @include FlexLayout(row, center, center);
+.HeroMenuPage {
+  & .btn {
+    background-color: $DarkGray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem;
+  }
+  & .btntxtandborder {
+    font-size: 4rem;
+    border: 2px solid $LightPink;
+    padding: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 /*************************************/
@@ -25,7 +38,9 @@
   color: #ffffff;
   background-color: $DarkGray;
   padding: 1.5rem 2rem;
-  @include FlexLayout(row, center, center);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .SecondNavList {
@@ -47,7 +62,10 @@
 .HotDrink,
 .ColdDrink,
 .Pasteries {
-  @include FlexLayout(column, center, center);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 3rem;
   text-align: center;
   padding: 5rem 3rem;

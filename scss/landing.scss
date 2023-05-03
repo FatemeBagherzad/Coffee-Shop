@@ -141,7 +141,9 @@
   justify-items: start;
 }
 .LearnMoreLogos {
-  @include FlexLayout(row, space-between, center);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .LearnMoreBtn {
   align-self: flex-start;
@@ -149,7 +151,9 @@
 .LearnMoreRight {
   background-image: url(../Assets/images/coldbrewbackground.png);
   @include BackgroundHero;
-  @include FlexLayout(row, center, center);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   grid-column: 3;
 }
 .LearnMoreTiltedCan {

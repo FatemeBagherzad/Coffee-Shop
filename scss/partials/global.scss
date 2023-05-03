@@ -26,12 +26,6 @@ $LightGray: #f7f7f7;
 $Blue: #5bacc3;
 $LightPink: #fff0ed;
 
-// *******lAYOUT*********
-@mixin FlexLayout($direction, $justify, $align) {
-  flex-direction: $direction;
-  justify-content: $justify;
-  align-items: $align;
-}
 // *******Background images*********
 @mixin BackgroundHero {
   background-position: center;
@@ -88,7 +82,7 @@ p {
 }
 .AllLinks:hover,
 .AllLinks:active {
-  color: $Blue3;
+  color: $Blue;
   padding: 0.05rem 0.05rem;
   box-shadow: 0 0.1rem 0rem 0rem;
 }
@@ -102,7 +96,9 @@ p {
   width: 20rem;
   height: 5rem;
   position: relative;
-  @include FlexLayout(row, flex-start, center);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .btntxtandborder {
@@ -136,9 +132,12 @@ p {
 .Logo,
 .TopNav,
 .NavList {
-  @include FlexLayout(row, flex-start, center);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .NavList {
+  align-items: center;
   gap: 2rem;
 }
 .TopNav {
@@ -195,7 +194,10 @@ p {
   background-color: $LightGray;
 }
 .show {
-  @include FlexLayout(column, flex-start, center);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 1rem;
   transition: all 0.3s ease-in;
   position: fixed;

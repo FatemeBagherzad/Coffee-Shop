@@ -17,6 +17,9 @@ Open Sans Bold 700
 
 */
 /*************************************/
+/* Variables */
+/*************************************/
+/*************************************/
 /* General rules */
 /*************************************/
 * {
@@ -80,7 +83,7 @@ p {
 .btn {
   padding: 0.8rem 2rem;
   background-color: #5bacc3;
-  color: white;
+  color: #fff;
   border: none;
   text-decoration: none;
   font-size: 2.4rem;
@@ -89,13 +92,14 @@ p {
   position: relative;
   display: flex;
   justify-content: flex-start;
+  align-items: center;
 }
 
 .btntxtandborder {
   width: 20rem;
   height: 5rem;
   background-color: transparent;
-  border: 2px solid rgb(59, 59, 59);
+  border: 2px solid #393939;
   padding: 0.8rem 2rem;
   position: absolute;
   top: -0.5rem;
@@ -104,16 +108,11 @@ p {
 
 .btntxtandborder:hover {
   cursor: pointer;
-  border: 2px solid rgb(255, 255, 255);
+  border: 2px solid #fff0ed;
 }
 
 .btntxtandborder:active {
   transform: translate(0.5rem, 0.5rem);
-}
-
-hr {
-  border-top: 0.1rem solid rgb(255, 255, 255);
-  border-bottom: 0.2rem solid #393939;
 }
 
 #HomeButton {
@@ -128,15 +127,16 @@ hr {
 .NavList {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .NavList {
+  align-items: center;
   gap: 2rem;
 }
 
 .TopNav {
   justify-content: space-between;
-  align-items: center;
   gap: 6rem;
   padding: 0.8rem 2rem;
   background-color: #fff0ed;
@@ -179,7 +179,7 @@ hr {
   /* position: absolute; */
   font-size: 2.4rem;
   background-color: #5bacc3;
-  box-shadow: 0px 0.5rem 0.5rem 0px rgba(62, 62, 62, 0.2);
+  box-shadow: 0px 0.5rem 0.5rem 0px #393939;
   z-index: 999;
   padding-left: 1rem;
 }
@@ -192,7 +192,7 @@ hr {
 }
 
 .dropdown-content a:hover {
-  background-color: #ddd;
+  background-color: #f7f7f7;
 }
 
 .show {
@@ -258,17 +258,26 @@ hr {
   background-size: cover;
   width: 100vw;
   height: 80vh;
-  color: #fdf2e9;
+  color: #f7f7f7;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
-.HeroMenuPageText {
+.HeroMenuPage .btn {
   background-color: #393939;
-  width: 100vw;
-  height: 6rem;
   display: flex;
   justify-content: center;
+  align-items: center;
+  padding: 6rem;
+}
+.HeroMenuPage .btntxtandborder {
+  font-size: 4rem;
+  border: 2px solid #fff0ed;
+  padding: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*************************************/
@@ -280,6 +289,7 @@ hr {
   padding: 1.5rem 2rem;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .SecondNavList {
@@ -304,39 +314,38 @@ hr {
 .Pasteries {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  justify-content: center;
   align-items: center;
+  gap: 3rem;
   text-align: center;
   padding: 5rem 3rem;
-}
-
-.HotDrink,
-.Pasteries,
-.ColdDrink {
   grid-column: 2;
 }
 
 .MenuItemsDecriptionB1 {
   background-image: linear-gradient(rgba(34, 34, 34, 0.8), rgba(40, 40, 40, 0.6)), url(../Assets/images/DesignedVersion/hero/MenuPageHotDrinkHero2.jpg);
-  background-size: cover;
   background-position: center;
-  color: rgb(214, 214, 214);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #f7f7f7;
 }
 
 .MenuItemsDecriptionB2 {
   background-image: linear-gradient(rgba(34, 34, 34, 0.8), rgba(40, 40, 40, 0.5)), url(../Assets/images/DesignedVersion/hero/MenuPageColdBrewHero2.jpeg);
-  background-size: cover;
   background-position: center;
-  color: rgb(214, 214, 214);
-  border-top: 2rem solid #fdf2e9;
-  border-bottom: 2rem solid #fdf2e9;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #f7f7f7;
+  border-top: 2rem solid #fff0ed;
+  border-bottom: 2rem solid #fff0ed;
 }
 
 .MenuItemsDecriptionB3 {
   background-image: linear-gradient(rgba(34, 34, 34, 0.8), rgba(40, 40, 40, 0.6)), url(../Assets/images/DesignedVersion/hero/MenuPagePasteriesHero2.jpg);
-  background-size: cover;
   background-position: center;
-  color: rgb(214, 214, 214);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #f7f7f7;
 }
 
 .price {
