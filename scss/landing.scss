@@ -9,8 +9,7 @@
     ),
     url(../Assets/images/DesignedVersion/hero/coffee-beans-couple-wallpaper-preview.jpg);
   /* background-color: #fff0ed; */
-  background-size: cover;
-  background-position: center;
+  @include BackgroundHero;
   color: white;
   width: 100vw;
   height: 70vh;
@@ -67,7 +66,7 @@
   margin-top: 0.5rem;
   height: 16rem;
   position: relative;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 #ScrollingMenu {
   display: flex;
@@ -117,7 +116,7 @@
 }
 .ProductCardPrice {
   font-weight: 800;
-  color: #5bacc3;
+  color: $Blue;
   font-size: 3rem;
   margin-top: 1rem;
 }
@@ -142,21 +141,16 @@
   justify-items: start;
 }
 .LearnMoreLogos {
-  display: flex;
-  justify-content: space-between;
+  @include FlexLayout(row, space-between, center);
 }
 .LearnMoreBtn {
   align-self: flex-start;
 }
 .LearnMoreRight {
   background-image: url(../Assets/images/coldbrewbackground.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  @include BackgroundHero;
+  @include FlexLayout(row, center, center);
   grid-column: 3;
-  display: flex;
-  align-content: center;
-  justify-content: center;
 }
 .LearnMoreTiltedCan {
   position: relative;
@@ -175,8 +169,8 @@
 /* discount */
 /*************************************/
 .discountbox {
-  color: #f7f7f7;
-  background-color: #393939;
+  color: $LightGray;
+  background-color: $DarkGray;
   padding: 2rem;
   margin: 15rem auto;
   width: 90%;
@@ -188,7 +182,7 @@
     background-color: red;
   }
   100% {
-    background-color: #393939;
+    background-color: $DarkGray;
   }
 }
 div.discountbox > p {

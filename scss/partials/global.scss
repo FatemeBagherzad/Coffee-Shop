@@ -16,6 +16,28 @@ Open Sans Bold 700
 #393939 - #F7F7F7 - #FFF
 
 */
+/*************************************/
+/* Variables */
+/*************************************/
+// *******colors*********
+$white: #fff;
+$DarkGray: #393939;
+$LightGray: #f7f7f7;
+$Blue: #5bacc3;
+$LightPink: #fff0ed;
+
+// *******lAYOUT*********
+@mixin FlexLayout($direction, $justify, $align) {
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+// *******Background images*********
+@mixin BackgroundHero {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 /*************************************/
 /* General rules */
@@ -34,7 +56,7 @@ body {
   font-family: "Open Sans";
   line-height: 1.4;
   font-weight: 400;
-  color: #393939;
+  color: $DarkGray;
   overflow-x: hidden;
   transition: all 0.3s;
 }
@@ -66,29 +88,28 @@ p {
 }
 .AllLinks:hover,
 .AllLinks:active {
-  color: #5bacc3;
+  color: $Blue3;
   padding: 0.05rem 0.05rem;
   box-shadow: 0 0.1rem 0rem 0rem;
 }
 .btn {
   padding: 0.8rem 2rem;
-  background-color: #5bacc3;
-  color: white;
+  background-color: $Blue;
+  color: $white;
   border: none;
   text-decoration: none;
   font-size: 2.4rem;
   width: 20rem;
   height: 5rem;
   position: relative;
-  display: flex;
-  justify-content: flex-start;
+  @include FlexLayout(row, flex-start, center);
 }
 
 .btntxtandborder {
   width: 20rem;
   height: 5rem;
   background-color: transparent;
-  border: 2px solid rgb(59, 59, 59);
+  border: 2px solid $DarkGray;
   padding: 0.8rem 2rem;
   position: absolute;
   top: -0.5rem;
@@ -96,15 +117,15 @@ p {
 }
 .btntxtandborder:hover {
   cursor: pointer;
-  border: 2px solid rgb(255, 255, 255);
+  border: 2px solid #fff0ed;
 }
 .btntxtandborder:active {
   transform: translate(0.5rem, 0.5rem);
 }
-hr {
-  border-top: 0.1rem solid rgb(255, 255, 255);
-  border-bottom: 0.2rem solid #393939;
-}
+// hr {
+//   border-top: 0.1rem solid $white;
+//   border-bottom: 0.2rem solid $DarkGray;
+// }
 #HomeButton {
   visibility: hidden;
 }
@@ -115,18 +136,16 @@ hr {
 .Logo,
 .TopNav,
 .NavList {
-  display: flex;
-  align-items: center;
+  @include FlexLayout(row, flex-start, center);
 }
 .NavList {
   gap: 2rem;
 }
 .TopNav {
   justify-content: space-between;
-  align-items: center;
   gap: 6rem;
   padding: 0.8rem 2rem;
-  background-color: #fff0ed;
+  background-color: $LightPink;
 }
 
 /**************************/
@@ -144,15 +163,15 @@ hr {
   font-weight: 600;
   right: 0rem;
   top: 0.5rem;
-  background-color: #5bacc3;
+  background-color: $Blue;
   border: none;
   padding: 0.5rem 5rem 0.5rem 0.5rem;
   position: fixed;
-  color: #fff0ed;
+  color: $LightPink;
 }
 .dropbtn:hover,
 .dropbtn:focus {
-  background-color: #393939;
+  background-color: $DarkGray;
 }
 .dropdown-content {
   width: 30vw;
@@ -161,25 +180,22 @@ hr {
   display: none;
   /* position: absolute; */
   font-size: 2.4rem;
-  background-color: #5bacc3;
-  box-shadow: 0px 0.5rem 0.5rem 0px rgba(62, 62, 62, 0.2);
+  background-color: $Blue;
+  box-shadow: 0px 0.5rem 0.5rem 0px $DarkGray;
   z-index: 999;
   padding-left: 1rem;
 }
 .dropdown-content a {
-  color: #f7f7f7;
+  color: $LightGray;
   /* padding: 1rem 1rem; */
   text-decoration: none;
   /* display: flex; */
 }
 .dropdown-content a:hover {
-  background-color: #ddd;
+  background-color: $LightGray;
 }
 .show {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include FlexLayout(column, flex-start, center);
   gap: 1rem;
   transition: all 0.3s ease-in;
   position: fixed;
@@ -191,7 +207,7 @@ hr {
 /* Footer */
 /*************************************/
 .Footer {
-  background-color: #fff0ed;
+  background-color: $LightPink;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
@@ -211,7 +227,6 @@ hr {
 }
 .FooterCoffeeBeanBackground {
   position: absolute;
-
   opacity: 30%;
   width: 10rem;
 }

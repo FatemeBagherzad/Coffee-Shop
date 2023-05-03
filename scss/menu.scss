@@ -4,22 +4,18 @@
 /*************************************/
 .HeroMenuPage {
   background-image: url(../Assets/images/coffee-circle.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  @include BackgroundHero;
   width: 100vw;
   height: 80vh;
-  color: #fdf2e9;
-  display: flex;
-  justify-content: center;
+  color: $LightGray;
+  @include FlexLayout(row, center, center);
 }
 
 .HeroMenuPageText {
-  background-color: #393939;
+  background-color: $DarkGray;
   width: 100vw;
   height: 6rem;
-  display: flex;
-  justify-content: center;
+  @include FlexLayout(row, center, center);
 }
 
 /*************************************/
@@ -27,10 +23,9 @@
 /*************************************/
 .SecondNav {
   color: #ffffff;
-  background-color: #393939;
+  background-color: $DarkGray;
   padding: 1.5rem 2rem;
-  display: flex;
-  justify-content: center;
+  @include FlexLayout(row, center, center);
 }
 
 .SecondNavList {
@@ -39,7 +34,7 @@
 }
 
 .vl {
-  border-left: 0.5rem solid #5bacc3;
+  border-left: 0.5rem solid $Blue;
 }
 
 /*************************************/
@@ -52,27 +47,21 @@
 .HotDrink,
 .ColdDrink,
 .Pasteries {
-  display: flex;
-  flex-direction: column;
+  @include FlexLayout(column, center, center);
   gap: 3rem;
-  align-items: center;
   text-align: center;
   padding: 5rem 3rem;
-}
-.HotDrink,
-.Pasteries,
-.ColdDrink {
   grid-column: 2;
 }
+
 .MenuItemsDecriptionB1 {
   background-image: linear-gradient(
       rgba(34, 34, 34, 0.8),
       rgba(40, 40, 40, 0.6)
     ),
     url(../Assets/images/DesignedVersion/hero/MenuPageHotDrinkHero2.jpg);
-  background-size: cover;
-  background-position: center;
-  color: rgb(214, 214, 214);
+  @include BackgroundHero;
+  color: $LightGray;
 }
 .MenuItemsDecriptionB2 {
   background-image: linear-gradient(
@@ -80,11 +69,10 @@
       rgba(40, 40, 40, 0.5)
     ),
     url(../Assets/images/DesignedVersion/hero/MenuPageColdBrewHero2.jpeg);
-  background-size: cover;
-  background-position: center;
-  color: rgb(214, 214, 214);
-  border-top: 2rem solid #fdf2e9;
-  border-bottom: 2rem solid #fdf2e9;
+  @include BackgroundHero;
+  color: $LightGray;
+  border-top: 2rem solid $LightPink;
+  border-bottom: 2rem solid $LightPink;
 }
 .MenuItemsDecriptionB3 {
   background-image: linear-gradient(
@@ -92,11 +80,10 @@
       rgba(40, 40, 40, 0.6)
     ),
     url(../Assets/images/DesignedVersion/hero/MenuPagePasteriesHero2.jpg);
-  background-size: cover;
-  background-position: center;
-  color: rgb(214, 214, 214);
+  @include BackgroundHero;
+  color: $LightGray;
 }
 .price {
-  color: #5bacc3;
+  color: $Blue;
   font-weight: bold;
 }
