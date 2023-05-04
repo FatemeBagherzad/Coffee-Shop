@@ -273,11 +273,16 @@ p {
 }
 .HeroMenuPage .btntxtandborder {
   font-size: 4rem;
-  border: 2px solid #fff0ed;
+  border: 4px solid #5bacc3;
   padding: 6rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  top: -1.5rem;
+  left: -1rem;
+}
+.HeroMenuPage .btntxtandborder:hover {
+  border: 4px solid #5bacc3;
 }
 
 /*************************************/

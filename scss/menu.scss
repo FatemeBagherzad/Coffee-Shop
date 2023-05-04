@@ -23,11 +23,16 @@
   }
   & .btntxtandborder {
     font-size: 4rem;
-    border: 2px solid $LightPink;
+    border: 4px solid $Blue;
     padding: 6rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    top: -1.5rem;
+    left: -1rem;
+    &:hover{
+      border: 4px solid $Blue;
+    }
   }
 }
 
