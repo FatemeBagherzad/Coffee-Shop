@@ -87,41 +87,36 @@ p {
   box-shadow: 0 0.1rem 0rem 0rem;
 }
 .btn {
-  padding: 0.8rem 2rem;
+  // padding: 0.8rem 2rem;
   background-color: $Blue;
-  color: $white;
   border: none;
   text-decoration: none;
   font-size: 2.4rem;
   width: 20rem;
   height: 5rem;
   position: relative;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  cursor: pointer;
+  &::before {
+    content: "Shop Now";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $LightPink;
+    border: 1.5px solid $LightPink;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: -0.8rem;
+    left: -0.8rem;
+  }
+  &:hover::before {
+    border: 1.5px solid $DarkGray;
+  }
+  &:active::before {
+    transform: translate(0.8rem, 0.8rem);
+  }
 }
 
-.btntxtandborder {
-  width: 20rem;
-  height: 5rem;
-  background-color: transparent;
-  border: 2px solid $DarkGray;
-  padding: 0.8rem 2rem;
-  position: absolute;
-  top: -0.5rem;
-  left: -0.5rem;
-}
-.btntxtandborder:hover {
-  cursor: pointer;
-  border: 2px solid #fff0ed;
-}
-.btntxtandborder:active {
-  transform: translate(0.5rem, 0.5rem);
-}
-// hr {
-//   border-top: 0.1rem solid $white;
-//   border-bottom: 0.2rem solid $DarkGray;
-// }
 #HomeButton {
   visibility: hidden;
 }

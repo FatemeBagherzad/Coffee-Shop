@@ -36,7 +36,9 @@
   }
   .HeroImg {
     grid-column: 3;
-    width: 90%;
+    & img{
+      width:80%;
+    }
   }
 
   /************ LearnMore **********/
@@ -66,7 +68,9 @@
   }
   .HeroImg {
     grid-column: 2;
-    width: 80%;
+    & img{
+      width:80%;
+    }
   }
 
   /************ Our Product Section**********/

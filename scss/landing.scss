@@ -30,6 +30,9 @@
 .HeroImg {
   grid-column: 3;
   justify-self: center;
+  & img {
+    width: 45rem;
+  }
 }
 
 /*************************************/
@@ -120,6 +123,13 @@
   font-size: 3rem;
   margin-top: 1rem;
 }
+
+.btnViewAll {
+  &::before {
+    content: "View All" !important;
+  }
+}
+
 /*************************************/
 /* LearnMore */
 /*************************************/
@@ -142,12 +152,20 @@
 }
 .LearnMoreLogos {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  & img {
+    width: 5rem;
+  }
 }
-.LearnMoreBtn {
-  align-self: flex-start;
+
+.btnLearnMore {
+  &::before {
+    content: "Learn More" !important;
+    align-self: flex-start;
+  }
 }
+
 .LearnMoreRight {
   background-image: url(../Assets/images/coldbrewbackground.png);
   @include BackgroundHero;
