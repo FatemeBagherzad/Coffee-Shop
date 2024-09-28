@@ -37,7 +37,7 @@ You can view the live version of the project here: [Live Demo on Netlify](https:
 
 Here’s an animated preview of the project:
 
-![Project Demo](images/project-demo.gif)
+![Project Demo](gif/coffee-shop.gif.gif)
 
 ## What I Learned
 
