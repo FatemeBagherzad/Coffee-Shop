@@ -47,7 +47,7 @@ html {
   overflow-x: hidden;
 }
 body {
-  font-family: "Open Sans";
+  font-family: 'Open Sans';
   line-height: 1.4;
   font-weight: 400;
   color: $DarkGray;
@@ -97,7 +97,7 @@ p {
   position: relative;
   cursor: pointer;
   &::before {
-    content: "Shop Now";
+    content: 'Shop Now';
     display: flex;
     align-items: center;
     justify-content: center;

@@ -1,4 +1,4 @@
-@use "./partials/global" as *;
+@use './partials/global' as *;
 /*************************************/
 /* Hero Section */
 /*************************************/
@@ -126,7 +126,7 @@
 
 .btnViewAll {
   &::before {
-    content: "View All" !important;
+    content: 'View All' !important;
   }
 }
 
@@ -161,7 +161,7 @@
 
 .btnLearnMore {
   &::before {
-    content: "Learn More" !important;
+    content: 'Learn More' !important;
     align-self: flex-start;
   }
 }
