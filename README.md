@@ -8,6 +8,12 @@ This project is a demonstration of my skills in HTML, CSS, and SCSS, along with 
 
 You can view the live version of the project here: [Live Demo on Netlify](https://fateme-coffee-shop.netlify.app)
 
+## Animated Demo
+
+Here’s an animated preview of the project:
+
+![Project Demo](gif/coffee-shop.gif)
+
 ## Features
 
 - **Responsive Design**: The layout adapts seamlessly across different devices and screen sizes.
@@ -32,12 +38,6 @@ You can view the live version of the project here: [Live Demo on Netlify](https:
    cd Coffee-Shop
    ```
 3. Open the `index.html` file in your preferred web browser.
-
-## Animated Demo
-
-Here’s an animated preview of the project:
-
-![Project Demo](gif/coffee-shop.gif)
 
 ## What I Learned
 
