@@ -1,4 +1,4 @@
-# My First HTML, CSS & SCSS Project
+# HTML, CSS & SCSS Project
 
 ## Project Overview
 
