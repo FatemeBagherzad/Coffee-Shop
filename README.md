@@ -1,4 +1,4 @@
-# HTML, CSS & SCSS Project
+# Coffee-Shop
 
 ## Project Overview
 
