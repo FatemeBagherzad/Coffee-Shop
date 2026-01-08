@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This project is a demonstration of my skills in HTML, CSS, and SCSS, along with version control using Git. The aim was to create a visually appealing and responsive web page while practicing the fundamentals of front-end development.
+This project showcases my proficiency in HTML, CSS, and SCSS, as well as version control with Git. It focuses on building a responsive, visually polished web page using established front-end development principles.
 
 ## Live Demo
 
